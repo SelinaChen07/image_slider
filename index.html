@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Image Carousel</title>
+		<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/slider.css">
+		<script type="text/javascript" src="js/jQuery.js"></script>
+		<script type="text/javascript" src="js/slider.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<h1 class="text-center mt-3 mb-3">Image Carousel</h1>
+			<!-- Only the image in the slider could be seen. overflow:hidden -->
+			<section id="slider" class="mx-auto">
+				<!-- images_container contains all the photos in one row. All images will overflow the slider and be hidden except for the one on show.-->
+				<div id="images_container" class="row no-gutters">
+					<div class="image_frame col-2">
+						<img class="" src="images/image1.jpg">
+					</div>
+					<div class="image_frame col-2 text-center">
+						<img class="align-middle" src="images/image2.jpg">
+					</div>
+					<div class="image_frame col-2 text-center">
+						<img class="align-middle" src="images/image3.jpg">
+					</div>
+					<div class="image_frame col-2 text-center">
+						<img class="align-middle" src="images/image4.jpg">
+					</div>
+					<div class="image_frame col-2 text-center">
+						<img class="align-middle" src="images/image5.jpg">
+					</div>
+					<div class="image_frame col-2 text-center">
+						<img class="align-middle" src="images/image1.jpg">
+					</div>
+				</div>
+				<!-- Arrow buttons to slide left/right manually with absolute position to be placed on top of the image. -->
+				<div class="slide_button" id="pre_button"><a href="#"><img src="images/arrow_left.png"></a></div>
+				<div class="slide_button" id="next_button"><a href="#"><img src="images/arrow_right.png"></a></div>
+			</section>
+			<!-- Preview bar to preview the images. Each circle is the preview botton for each image. Image preview is shown when mouse hover on the button. -->
+			<section class="text-center mt-3" id="preview_bar">				
+				<a class="d-inline-block preview_button mx-1" href="#">
+					<!-- Image preview with absolute position to be placed on top of the preview button. Preview is hidden unless hover on. -->	
+					<img class="image_preview" src="images/image1.jpg">
+				</a>				
+				<a class="d-inline-block preview_button mx-1" href="#">
+					<img class="image_preview" src="images/image2.jpg">
+				</a>
+				<a class="d-inline-block preview_button mx-1" href="#">
+					<img class="image_preview" src="images/image3.jpg">
+				</a>
+				<a class="d-inline-block preview_button mx-1" href="#">
+					<img class="image_preview" src="images/image4.jpg">
+				</a>
+				<a class="d-inline-block preview_button mx-1" href="#">
+					<img class="image_preview" src="images/image5.jpg">
+				</a>
+			</section>
+		</div>
+	</body>
+</html>
